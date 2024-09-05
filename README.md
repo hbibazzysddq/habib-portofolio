@@ -10,6 +10,8 @@ Saya berasal dari Padang Panjang, Sumatera Barat, Indonesia
 Ada beberapa hal yang ingin saya capai
 
 -Saya ingin sekali bisa lancar menggunakan Framework NextJS
+
 -Saya ingin belajar yang namanya mongoDB untuk databasenya
+
 -Saya ingin belajar ExpressJs untuk Backendnya
 
