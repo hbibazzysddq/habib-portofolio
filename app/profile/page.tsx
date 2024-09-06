@@ -112,8 +112,8 @@ const profile = () => {
           <TabsTrigger value="education" className="inline-flex  items-center w-full bg-[#27272c] justify-center whitespace-nowrap text-white rounded-lg p-3 text-base font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary data-[state=active]:font-bold data-[state=active]:shadow-sm">My Education</TabsTrigger>
           <TabsTrigger value="skills" className="inline-flex  items-center w-full bg-[#27272c] justify-center whitespace-nowrap text-white rounded-lg p-3 text-base font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary data-[state=active]:font-bold data-[state=active]:shadow-sm">My Skills</TabsTrigger>
         </TabsList>
-        <div className="min-h-[70vh] w-full">
-          <TabsContent value="about" className="w-full">
+        <div className=" w-full">
+          <TabsContent value="about" className="min-h-[81.2vh] w-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{about.title}</h3>
               <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}
@@ -133,7 +133,7 @@ const profile = () => {
               </ScrollArea>
             </div>
           </TabsContent>
-          <TabsContent value="education" className="w-full ">
+          <TabsContent value="education" className="min-h-[121.2vh] xl:min-h-[81.2vh] w-full ">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">
                   {pendidikan.title}
