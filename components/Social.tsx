@@ -7,7 +7,7 @@ interface SocialProps {
 }
 
 const socials = [
-  { icon: <FaGithub />, path: "https://github.com/habibazizy" },
+  { icon: <FaGithub />, path: "https://github.com/hbibazzysddq" },
   { icon: <FaInstagram />, path: "https://www.instagram.com/habibazizysiddiq_/" },
   { icon: <FaTiktok/>, path: "https://www.tiktok.com/@xmodra_?is_from_webapp=1&sender_device=pc"}
 ];
