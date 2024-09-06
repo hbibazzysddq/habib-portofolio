@@ -37,7 +37,6 @@ const projects = [
       { name: "Css" },
       { name: "Javascript" },
       { name: "Php" },
-      { name: "Laravel" },
     ],
     image: '/', // Ganti dengan path gambar yang benar
     live: "",
