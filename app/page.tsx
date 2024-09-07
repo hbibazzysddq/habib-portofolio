@@ -5,7 +5,7 @@ import Photo from "@/components/Photo";
 
 const page = () => {
   return (
-    <section className="h-[82.3vh] overflow-x-auto">
+    <section className="h-full  xl:h-[82.3vh] overflow-x-auto">
       <div className="container mx-auto h-full w-full">
         <div className="flex flex-col xl:flex-row items-center justify-evenly xl:pt-8 xl:pb-[108px]">
           <div className="text-center xl:text-left order-2 xl:order-none">
