@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from 'react-icons/fi';
 import Photo from "@/components/Photo";
 
+
+
 const page = () => {
   return (
     <section className="h-full  xl:h-[82.3vh] overflow-x-auto">

@@ -35,7 +35,7 @@ const projects = [
     stack: [
       { name: "Html" },
       { name: "Css" },
-      { name: "Php" },
+      { name: "php" },
       { name: "laravel" },
     ],
     image: '/', // Ganti dengan path gambar yang benar

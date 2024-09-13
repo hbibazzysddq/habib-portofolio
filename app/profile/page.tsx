@@ -3,7 +3,7 @@
 import { Description } from "@radix-ui/react-dialog";
 import { info } from "console";
 import { title } from "process";
-import {FaHtml5, FaCss3 , FaPhp , FaLaravel, FaJs} from "react-icons/fa"
+import {FaHtml5, FaCss3 , FaReact , FaJs} from "react-icons/fa"
 import {SiTailwindcss, SiNextdotjs} from "react-icons/si";
 
 
@@ -67,12 +67,8 @@ const skills = {
       name:"javascript"
     },
     {
-      icon: <FaPhp/>,
-      name:"php"
-    },
-    {
-      icon: <FaLaravel/>,
-      name:"laravel"
+      icon: <FaReact/>,
+      name:"react.js"
     },
     {
       icon: <SiNextdotjs/>,

@@ -1,5 +1,4 @@
 'use client';
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -40,4 +39,5 @@ const Nav = () => {
       </nav>
     );
   };
+
 export default Nav
