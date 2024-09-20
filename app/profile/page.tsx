@@ -4,7 +4,7 @@ import { Description } from "@radix-ui/react-dialog";
 import { info } from "console";
 import { title } from "process";
 import {FaHtml5, FaCss3 , FaReact , FaJs, FaPhp} from "react-icons/fa"
-import {SiTailwindcss, SiNextdotjs} from "react-icons/si";
+import {SiTailwindcss, SiNextdotjs, SiFlutter, SiDart} from "react-icons/si";
 
 
 const about = {
@@ -52,7 +52,7 @@ const pendidikan = {
 
 const skills = {
   title:"My Skill",
-  description:"Beberapa Bahasa Pemograman dan Framework yang telah saya pelajari.",
+  description:"Beberapa Bahasa Pemograman, Library dan Framework yang telah saya pelajari.",
   skillist:[
     {
       icon: <FaHtml5/>,
@@ -82,6 +82,14 @@ const skills = {
       icon: <SiTailwindcss/>,
       name:"tailwind.css"
     },
+    {
+      icon: <SiFlutter/>,
+      name:"flutter"
+    },
+    {
+      icon: <SiDart/>,
+      name:"dart"
+    },
   ]
 };
 
@@ -105,6 +113,7 @@ const profile = () => {
   }}
   className="min-h-[81.2vh] flex items-center justify-center py-10 xl:py-0 xl:px-36">
     <div className="container mx-auto">
+      {/* About */}
       <Tabs defaultValue="about"
       className="flex flex-col xl:flex-row gap-[60px]">
         <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
@@ -133,6 +142,7 @@ const profile = () => {
               </ScrollArea>
             </div>
           </TabsContent>
+          {/* Education */}
           <TabsContent value="education" className="min-h-[121.2vh] xl:min-h-[81.2vh] w-full ">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">
@@ -153,6 +163,7 @@ const profile = () => {
                 </ScrollArea>
             </div>
           </TabsContent>
+          {/* Skills */}
           <TabsContent value="skills" className="w-full">
             <div className="flex flex-col gap-[30px]">
               <h3 className="text-4xl font-bold">{skills.title}</h3>
