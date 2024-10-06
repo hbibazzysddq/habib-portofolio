@@ -24,22 +24,21 @@ const projects = [
     ],
     image:"/image-slider.png",
     live:"",
-    github:""
+    github:"https://github.com/hbibazzysddq/image-slider"
   },
   {
     num: "02",
-    category: "Aplikasi To Do List With Laravel",
+    category: "Profile Card",
     title: "Project 2",
-    description: "Membuat aplikasi To Do List sederhana menggunakan Laravel",
+    description: "Halaman Profile Card dengan HTML CSS JS",
     stack: [
       { name: "Html" },
       { name: "Css" },
-      { name: "php" },
-      { name: "laravel" },
+      { name: "JS" },
     ],
-    image: '/', // Ganti dengan path gambar yang benar
+    image: '/project02.png', // Ganti dengan path gambar yang benar
     live: "",
-    github: ""
+    github: "https://github.com/hbibazzysddq/profile-card"
   },
   // Tambahkan proyek lain di sini jika ada
 ];
