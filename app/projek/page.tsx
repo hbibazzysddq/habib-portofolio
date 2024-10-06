@@ -15,15 +15,14 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Crud dengan Php",
+    category: "Image Slider",
     title: "Project 1",
-    description: "Crud Menggunakan Php",
+    description: "Image Slider menggunakan HTML CSS",
     stack: [
       { name: "Html" },
       { name: "Css" },
-      { name: "Php" },
     ],
-    image:"/",
+    image:"/image-slider.png",
     live:"",
     github:""
   },
