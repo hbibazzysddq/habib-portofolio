@@ -15,16 +15,17 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Image Slider",
+    category: "Table Crud Sederhana",
     title: "Project 1",
-    description: "Image Slider menggunakan HTML CSS",
+    description: "Table daftar kos-kosan menggunakan HTML TAILWINDCSS PHP (Gambar kepotong)",
     stack: [
       { name: "Html" },
-      { name: "Css" },
+      { name: "Tailwindcss" },
+      { name: "Php" },
     ],
-    image:"/image-slider.png",
+    image:"/kos.png",
     live:"",
-    github:"https://github.com/hbibazzysddq/image-slider"
+    github:"https://github.com/hbibazzysddq/crud-kos"
   },
   {
     num: "02",
