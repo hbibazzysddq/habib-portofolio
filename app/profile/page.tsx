@@ -4,15 +4,15 @@ import { Description } from "@radix-ui/react-dialog";
 import { info } from "console";
 import { title } from "process";
 import {FaHtml5, FaCss3 , FaReact , FaJs, FaPhp} from "react-icons/fa"
-import {SiTailwindcss, SiNextdotjs, SiFlutter, SiDart} from "react-icons/si";
+import {SiTailwindcss, SiNextdotjs, SiFlutter, SiDart, SiExpress} from "react-icons/si";
 
 
 const about = {
   title:"About Me",
-  description: "halo! Nama saya Habib Azizy Siddiq,saya berumur 17 tahun. saya Bersekolah di SMKN 2 Padang Panjang dengan fokus pada jurusan Rekayasa Perangkat Lunak (RPL),Dan sekarang saya sudah kelas XII. Hal yang ingin saya capai beberapa tahun kedepan adalah ingin menjadi Fullstack developer,dan sekarang saya fokus untuk mengembangkan skill saya pada bidang Frond-End. Dalam beberapa tahun kedepan saya juga akan mempelajari tentang Back-End, dan Database." ,
+  description: "Hello! My name is Habib Azizy Siddiq, and I am 17 years old. I am studying at SMKN 2 Padang Panjang with a focus on Software Engineering, and I am currently in the 12th grade." ,
   items: [
     {
-      fieldName: "Nama",
+      fieldName: "Name",
       fieldValue:"Habib Azizy Siddiq"
     },
     {
@@ -25,7 +25,7 @@ const about = {
     },
     {
       fieldName: "Status",
-      fieldValue:"Pelajar"
+      fieldValue:"Student"
     }
   ]
 };
@@ -33,7 +33,7 @@ const about = {
 
 const pendidikan = {
   title:"My Education ",
-  description: "Pendidikan yang telah saya jalani pada saat ini." ,
+  description: "The education that I have undergone at this time" ,
   items:[
     {
       sekolah: "SDN 13 Balai-Balai",
@@ -52,7 +52,7 @@ const pendidikan = {
 
 const skills = {
   title:"My Skill",
-  description:"Beberapa Bahasa Pemograman, Library dan Framework yang telah saya pelajari.",
+  description:"Some of the Programming Languages, Libraries, and Frameworks I have learned.",
   skillist:[
     {
       icon: <FaHtml5/>,
@@ -90,6 +90,10 @@ const skills = {
       icon: <SiDart/>,
       name:"dart"
     },
+    {
+      icon: <SiExpress/>,
+      name:"express"
+    }
   ]
 };
 
@@ -113,6 +117,10 @@ const profile = () => {
   }}
   className="min-h-[81.2vh] flex items-center justify-center py-10 xl:py-0 xl:px-36">
     <div className="container mx-auto">
+
+
+
+
       {/* About */}
       <Tabs defaultValue="about"
       className="flex flex-col xl:flex-row gap-[60px]">
@@ -136,12 +144,14 @@ const profile = () => {
                     <p className="text-base">{item.fieldValue}</p>
                   </li>
                 ))}
-
-                                    
                 </ul>
               </ScrollArea>
             </div>
           </TabsContent>
+
+
+
+
           {/* Education */}
           <TabsContent value="education" className="min-h-[121.2vh] xl:min-h-[81.2vh] w-full ">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -158,11 +168,14 @@ const profile = () => {
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.sekolah}</h3>
                       </li>
                     ))}
-                    
                   </ul>
                 </ScrollArea>
             </div>
           </TabsContent>
+
+
+
+
           {/* Skills */}
           <TabsContent value="skills" className="w-full">
             <div className="flex flex-col gap-[30px]">

@@ -13,12 +13,10 @@ const page = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl mb-1">Web Developer dan Mobile Developer</span>
 
-            <h1 className="h2 mb-6">Hallo Saya <br /> <span className="text-accent">Habib Azizy Siddiq</span></h1>
+            <h1 className="h2 mb-6">Hello, I am <br /> <span className="text-accent">Habib Azizy Siddiq</span></h1>
 
             <p className="max-w-[500px] mb-9 text-white/80">
-              Saya siswa dari SMKN 2 Padang Panjang, Jurusan yang saya tekuni adalah Rekayasa Perangkat Lunak.
-              Hal ingin saya lakukan beberapa tahun kedepan adalah ingin mempelajari Fullstack Developer. 
-              Framework yang saya pakai untuk membuat Portofolio ini adalah NEXTJS.
+            I am a student at SMKN 2 Padang Panjang, majoring in Software Engineering.
             </p>
             <div>
               <div className="mb-6 xl:mb-0">
