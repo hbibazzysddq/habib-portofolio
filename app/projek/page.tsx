@@ -15,31 +15,32 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Table Crud Sederhana",
+    category: "Panic Button",
     title: "Project 1",
-    description: "Table daftar kos-kosan menggunakan HTML TAILWINDCSS PHP (Gambar kepotong)",
+    description: "Website and application for Sanur Hospital Bali",
     stack: [
-      { name: "Html" },
-      { name: "Tailwindcss" },
-      { name: "Php" },
+      { name: "Flutter" },
+      { name: "Express Js" },
+      { name: "MongoDB" },
+      { name: "The Things Network" },
     ],
-    image:"/kos.png",
+    image:"/sanur.png",
     live:"",
-    github:"https://github.com/hbibazzysddq/crud-kos"
+    github:"Not Available"
   },
   {
     num: "02",
-    category: "Profile Card",
+    category: "Login, Register and Dashboard",
     title: "Project 2",
-    description: "Halaman Profile Card dengan HTML CSS JS",
+    description: "Simple Website With React JS and Express JS",
     stack: [
-      { name: "Html" },
-      { name: "Css" },
-      { name: "JS" },
+      { name: "React Js" },
+      { name: "Express Js" },
+      { name: "Mysql" },
     ],
-    image: '/project02.png', // Ganti dengan path gambar yang benar
+    image: '/reactexpress.png', // Ganti dengan path gambar yang benar
     live: "",
-    github: "https://github.com/hbibazzysddq/profile-card"
+    github: "https://github.com/hbibazzysddq/crud-react-belajar"
   },
   // Tambahkan proyek lain di sini jika ada
 ];
