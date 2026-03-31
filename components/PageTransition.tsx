@@ -1,30 +1,31 @@
 "use client";
-import { ReactNode } from 'react';
-import { AnimatePresence, easeOut, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
+const PageTransition = () => {
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => setMounted(true), []);
 
-interface PageTransitionProps {
-  children: ReactNode;
-}
-
-const PageTransition = ({ children }: PageTransitionProps) => {
     const pathname = usePathname()
-    return <AnimatePresence>
-        <div key={pathname}>
-            <motion.div initial={{opacity: 1}}
-            animate={{
-                opacity: 0,
-                transition: {delay: 1, duration: 0.4, ease: "easeInOut"},
-            }}
-            className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
-            >   
+    if (!mounted) return null;
 
-            </motion.div>
-            {children}
-        </div>
-        
-        </AnimatePresence>;
+    return (
+      <LazyMotion features={domAnimation}>
+        <AnimatePresence>
+          <div key={pathname}>
+            <m.div
+              initial={{ opacity: 1 }}
+              animate={{
+                opacity: 0,
+                transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
+              }}
+              className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
+            />
+          </div>
+        </AnimatePresence>
+      </LazyMotion>
+    );
 }
 
 export default PageTransition;

@@ -1,9 +1,11 @@
-  import type { Metadata } from "next";
-  import { JetBrains_Mono } from "next/font/google";
-  import "./globals.css";
-  import Header from "@/components/Header";
-  import PageTransition from "@/components/PageTransition";
-  import StairETransition from "@/components/StairTransition";
+import "./globals.css";
+import type { Metadata } from "next";
+import { JetBrains_Mono } from "next/font/google";
+import Header from "@/components/Header";
+import dynamic from "next/dynamic";
+
+const StairTransition = dynamic(() => import("@/components/StairTransition"), { ssr: false });
+const PageTransition = dynamic(() => import("@/components/PageTransition"), { ssr: false });
 
   const jetbrainsMono = JetBrains_Mono({ 
     subsets: ["latin"],
@@ -25,10 +27,9 @@
       <html lang="en">
         <body className={jetbrainsMono.variable}>
           <Header/>
-          <StairETransition/>
-          <PageTransition>
-            {children}
-          </PageTransition>
+          <StairTransition/>
+          <PageTransition />
+          {children}
         </body>
       </html>
     );

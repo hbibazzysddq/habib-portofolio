@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -27,25 +27,10 @@ const projects = [
     image:"/sanur.png",
     live:"",
     github:"Not Available"
-  },
-  {
-    num: "02",
-    category: "Login, Register and Dashboard",
-    title: "Project 2",
-    description: "Simple Website With React JS and Express JS",
-    stack: [
-      { name: "React Js" },
-      { name: "Express Js" },
-      { name: "Mysql" },
-    ],
-    image: '/reactexpress.png', // Ganti dengan path gambar yang benar
-    live: "",
-    github: "https://github.com/hbibazzysddq/crud-react-belajar"
-  },
-  // Tambahkan proyek lain di sini jika ada
+  }
 ];
 
-const Projek = () => {
+const Project = () => {
   const [project, setProject] = useState(projects[0]); // Set default project
 
   // Define the type of swiper parameter explicitly
@@ -55,7 +40,8 @@ const Projek = () => {
   };
 
   return (
-    <motion.div
+    <LazyMotion features={domAnimation}>
+    <m.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, 
         transition: { delay: 2.4,duration:0.4, ease:"easeIn"}
@@ -148,8 +134,9 @@ const Projek = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </m.div>
+    </LazyMotion>
   );
 };
 
-export default Projek;
+export default Project;
