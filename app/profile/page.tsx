@@ -118,7 +118,7 @@ type GithubStats = {
     | null;
 };
 
-const profile = () => {
+const Profile = () => {
   const githubUsername = "hbibazzysddq";
   const [github, setGithub] = useState<GithubStats | null>(null);
   const [githubYear, setGithubYear] = useState<number>(new Date().getFullYear());
@@ -385,4 +385,4 @@ const profile = () => {
   );
 };
 
-export default profile
+export default Profile
