@@ -27,6 +27,7 @@ const Photo = () => {
             width={350}
             height={350} 
             className="rounded-full border-accent border-4"
+            priority={true}
         />   
         </motion.div> 
       </motion.div>

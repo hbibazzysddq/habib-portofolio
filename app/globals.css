@@ -1,11 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-{}
 
 @layer base{
   body  {
-    @apply font-primary bg-primary text-white leading-loose
+    @apply font-primary bg-primary text-white leading-loose;
   }
   .h1 {
     @apply text-[40px] xl:text-[48px] leading-[1.1] font-semibold;
@@ -17,6 +16,6 @@
     @apply text-[10px] xl:text-[12px] leading-[1.1] font-semibold;
   }
   :root {
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
 }

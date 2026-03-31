@@ -15,10 +15,10 @@ const WorkSliderBtns: React.FC<WorkSliderBtnsProps> = ({ containerStyles, btnSty
   return (
     <div className={containerStyles}>
       <button className={btnStyles} onClick={() => swiper.slidePrev()}>
-        <PiCaretLeftBold className={iconStyles} onClick={()=> swiper.slidePrev()} />
+        <PiCaretLeftBold className={iconStyles} />
       </button>
       <button className={btnStyles} onClick={() => swiper.slideNext()}>
-        <PiCaretRightBold className={iconStyles} onClick={()=> swiper.slideNext()}  />
+        <PiCaretRightBold className={iconStyles} />
       </button>
     </div>
   );
